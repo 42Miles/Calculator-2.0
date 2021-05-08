@@ -3,11 +3,11 @@
 double getValue()
 {
     while (true) {
-
+        //user input (number)
         std::cout << "Enter a double value: ";
         double a;
         std::cin >> a;
-
+        //input check
         if (std::cin.fail())
         {
             std::cin.clear();
@@ -22,9 +22,11 @@ char getOperator()
 {
     while (true)
     {
+        //user input (symbol)
         std::cout << "Enter one of the following: +, -, *, or /: ";
         char sm;
         std::cin >> sm;
+        //input check
         switch (sm)
         {
             //fall-through for the correct symbols
